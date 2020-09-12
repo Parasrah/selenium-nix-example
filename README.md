@@ -9,25 +9,25 @@ linux already, congratulations, you can skip this step. Otherwise choose the pat
 
 #### WSL2
 
-**Benefits**
+Benefits
 * can continue using Windows
 * easy setup
 * better performance than VM
 * works seamlessly with tools like vscode (with wsl plugin)
 
-**Drawbacks**
+Drawbacks
 * WSL does have bugs that sometimes are hard to figure out / work around
 
 If you choose this path, visit [this](https://docs.microsoft.com/en-us/windows/wsl/install-win10) to get WSL2 setup.
 
 #### Native Linux
 
-**Benefits**
+Benefits
 * best performance
 * lots of resources to help out
 * most common path
 
-**Drawbacks**
+Drawbacks
 * lots of different ways to setup can make it daunting
 * can be unfamiliar for windows users
 
