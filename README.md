@@ -53,10 +53,14 @@ the instructions for "Getting Nix".
 
 ### Direnv (+Nix)
 
-To install direnv, simply run the following two commands in a terminal:
+To install `direnv`, you should use the normal package manager that comes with your system. For Debian based distributions (like Ubuntu),
+this can be achieved with the following command:
 
-* `nix-env -i direnv`
-* `nix-env -i nix-direnv`
+`sudo apt-get install direnv`
+
+You can then use `nix` to install the `nix-direnv` bindings using the following:
+
+`nix-env -i nix-direnv`
 
 If you don't know what a shell is, chances are you are using the `bash` shell, and will have to add the following line to
 the end your `~/.bashrc` file:
@@ -93,3 +97,11 @@ In a terminal, navigate to the root of the repository you have cloned, and execu
 This gives `direnv` permission to automatically manage the environments dependencies for you. Every time you
 navigate into this directory in a terminal, `direnv` will make those dependencies available to you. Likewise,
 if you leave the directory it will remove them  from your path.
+
+> NOTE: this could take a while to run the first time, as it's installing packages like `chrome` and `firefox`. Subsequent runs should be much faster.
+
+## FAQ
+
+**Why can't I use nix to install direnv?**
+
+There seems to be an issue with `WSL` where `nix` has not yet been added to the `$PATH` by the time your system runs the `.bashrc` file
