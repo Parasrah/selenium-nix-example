@@ -31,19 +31,20 @@ Drawbacks
 * lots of different ways to setup can make it daunting
 * can be unfamiliar for windows users
 
-For people new to Linux [PopOS](https://pop.system76.com/) is a beginner friendly linux distribution to get you started.
+For people new to Linux [PopOS](https://pop.system76.com/) is a beginner friendly linux distribution (based on Ubuntu)
+to get your feet wet.
 
 #### Linux VM
 
 Very similar to "Native Linux", except worse performance, more difficult setup and don't have to reboot to switch between
-linux/windows
+linux/windows.
 
 For those that choose this route, you can see [this guide](https://support.system76.com/articles/install-in-vm/) to get
 started with PopOS in a VM.
 
 ### Nix Package Manager
 
-> NOTE: at this point it is assumed you have a terminal available and open
+> NOTE: at this point it is assumed you have a terminal available and open.
 
 Nix is a package manager based on a few simple concepts that allow it to replace more specific package managers intended
 for specific languages & operating systems, such as `npm`, `pip`, `apt-get` and `pacman`.
@@ -53,8 +54,8 @@ the instructions for "Getting Nix".
 
 ### Direnv (+Nix)
 
-To install `direnv`, you should use the normal package manager that comes with your system. For Debian based distributions (like Ubuntu),
-this can be achieved with the following command:
+To install `direnv`, you should use the normal package manager that comes with your system. For Debian based distributions
+(PopOS or Ubuntu) this can be achieved with the following command:
 
 `sudo apt-get install direnv`
 
@@ -82,7 +83,10 @@ Then add the following to the bottom of the file:
 
 `eval "$(direnv hook bash)"`
 
-Before saving and closing the text editor.
+Before saving and closing the text editor. To reload this file you will either need to close and reopen your bash prompt,
+or source it using the command:
+
+`. ~/.bashrc`
 
 ### Git
 
